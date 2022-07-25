@@ -6,9 +6,11 @@ This flopack and instructions explains how to setup Google Drive API push notifc
 
 ## Prequisites
 - An active Google Drive connector in Okta Workflows. [Recommended]
-OR 
+
+OR
+
 - A custom api connector with an appropriately configured Google Cloud project, Google Drive API enabled, and service account
-- Access to the Google Search Console
+- Access to the (Google Search Console)[https://search.google.com/search-console/about]
 - Access or ownership of the resources you want to monitor
 
 ## Instructions
