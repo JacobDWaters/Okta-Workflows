@@ -1,2 +1,2 @@
 # Okta-Workflows
-Collections of Okta Workflows
+A collections of Okta Workflows
