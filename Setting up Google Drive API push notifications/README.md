@@ -17,7 +17,7 @@ OR
 ## Instructions
 
 ### Configure the Endpoint flow.
-- Import the "Configure Endpoint for Google Drive API Push Notifications" flow.
+- Import the [Configure Endpoint for Google Drive API Push Notifications](../blob/main/Setting%20up%20Google%20Drive%20API%20push%20notifications/configureEndpointForGoogleDriveApiPushNotifications.flow) flow.
 - Open the flow and select endpoint settings (the </> icon) at the bottom of the "API Endpoint" event card.
 - Copy the invoke URL.
         Make sure the endpoint is initially exposed as a Public Service, otherwise it will not be possible to verify ownership of the endpoint's invoke url during the next step.
