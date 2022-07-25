@@ -43,7 +43,7 @@ Once the endpoint flow has been configured and verified, there are two options r
 ### Option 1: Create Google Drive API push notification for a single file
 
 This is the easier of the two methods and will allow for monitoring for changes of a single file resource.
-- Import the [Create Google Drive API push notification for a single file] (../blob/Setting up Google Drive API push notifications/) flow.
+- Import the [Create Google Drive API push notification for a single file](../blob/main/Setting%20up%20Google%20Drive%20API%20push%20notifications/createGoogleDriveApiPushNotificationForASingleFile.flow) flow.
 - Add the file ID for the file you want to monitor.
 - Add the invoke URL that was configured earlier.
 - Save and turn ON the flow.
@@ -52,7 +52,7 @@ This is the easier of the two methods and will allow for monitoring for changes 
 ### Option 2: Create a Google Drive API Push Notification for all resource changes
 
 This method allows for the monitoring of all resource changes.
-- Import the "Create Google Drive API push notification for all resource changes" flow.
+- Import the [Create Google Drive API push notification for all resource changes](../blob/main/Setting%20up%20Google%20Drive%20API%20push%20notifications/createGoogleDriveApiPushNotificationForAllResourceChanges.flow) flow.
 - Add the invoke URL that was configured earlier.
 - Save and turn ON the flow.
 
