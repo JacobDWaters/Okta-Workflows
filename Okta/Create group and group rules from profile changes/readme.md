@@ -19,7 +19,7 @@ The workflow consists of a single flow and one table:
         * Example: for Department, use `department`
     * `group name prefix` = the prefix used to identify the group type.
         * Example: for Department, use `Dept - `. 
-    * ![image](/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Assign%20Card.png | width=100)
+    * ![image](/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Assign%20Card.png)
 2. Update the `Compose` card for creating the group rule's expression conditions.
     * Example: `user.department=="Department"`
     * ![image](/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Compose%20Card%20Expression%20Conditions.png)
