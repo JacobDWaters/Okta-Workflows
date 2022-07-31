@@ -15,14 +15,14 @@ The workflow consists of a single flow and one table:
 
 ## Setup
 1. in the `Assign` card at the beginning, change the folowing values
-    ..`monitored profile attribute` = the variable name for the user profile attribute to monitor.
-        ⋅⋅* Example: for Department, use `department`
-    ..`group name prefix` = the prefix used to identify the group type.
-        ⋅⋅* Example: for Department, use `Dept - `. 
+    * `monitored profile attribute` = the variable name for the user profile attribute to monitor.
+        * Example: for Department, use `department`
+    * `group name prefix` = the prefix used to identify the group type.
+        * Example: for Department, use `Dept - `. 
 2. Update the `Compose` card for creating the group rule's expression conditions.
-    ..Example: `user.department=="Department"`
+    * Example: `user.department=="Department"`
 3. Update the `Monitored profile attributes` table
-    ..The flow assumes that any value for the monitored profile attribute already listed in the table has a pre-existing group and group rule already. If you wish to exempt (or already have some groups/group rules for certain values) from having new group and group rules created, add them to the table.
+    * The flow assumes that any value for the monitored profile attribute already listed in the table has a pre-existing group and group rule already. If you wish to exempt (or already have some groups/group rules for certain values) from having new group and group rules created, add them to the table.
 
 ## Limitations & Known Issues
 1. The flow currently only supports monitoring for changes to a single profile attribute.
