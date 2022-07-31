@@ -25,6 +25,7 @@ The workflow consists of a single flow and one table:
     * ![image](/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Compose%20Card%20Expression%20Conditions.png)
 3. Update the `Monitored profile attributes` table
     * The flow assumes that any monitored attribute value already listed in the table has a pre-existing group and group rule. To exempt an attribute value from creating a new group and group rule, add them to the table prior to enabling the flow.
+    * ![image](/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/monitored%20profile%20attributes%20table.png)
 
 ## Limitations & Known Issues
 1. The flow currently only supports monitoring for changes to a single profile attribute.
