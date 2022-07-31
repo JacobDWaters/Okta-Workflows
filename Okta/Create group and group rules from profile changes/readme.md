@@ -19,14 +19,14 @@ The workflow consists of a single flow and one table:
         * Example: for Department, use `department`
     * `group name prefix` = the prefix used to identify the group type.
         * Example: for Department, use `Dept - `. 
-!(https://github.com/JacobDWaters/Okta-Workflows/blob/main/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Assign%20Card.png)
+    *![image](/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Assign%20Card.png)
 
 2. Update the `Compose` card for creating the group rule's expression conditions.
     * Example: `user.department=="Department"`
-!(https://github.com/JacobDWaters/Okta-Workflows/blob/main/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Compose%20Card%20Expression%20Conditions.png)
+    * ![image](/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Compose%20Card%20Expression%20Conditions.png)
 3. Update the `Monitored profile attributes` table
     * The flow assumes that any monitored attribute value already listed in the table has a pre-existing group and group rule. To exempt an attribute value from creating a new group and group rule, add them to the table prior to enabling the flow.
 ## Flow Chart
-!(https://github.com/JacobDWaters/Okta-Workflows/blob/main/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Create%20group%20and%20group%20rule%20from%20profile%20changes.svg)
+![image](/Create%20group%20and%20group%20rules%20from%20profile%20changes/resources/Create%20group%20and%20group%20rule%20from%20profile%20changes.svg)
 ## Limitations & Known Issues
 1. The flow currently only supports monitoring for changes to a single profile attribute.
