@@ -1,4 +1,4 @@
-# Create group and grouls rules from Okta profile changes
+# Create groups and group rules from Okta profile changes
 
 ## Overview
 
