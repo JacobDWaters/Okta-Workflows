@@ -62,7 +62,7 @@ Make the following changes to customize the flows.
 * - `2. Filter Factor List`. This flow creates a list of approved factors that a user can choose to verify with. Remove `factors` you dont want available to users from the first "Construct List" card. Do the same for `providers` on the second "Construct List" card.
 * - `5. Start Okta Factor Verification`. For push notification verification to work, enter your okta subdomain (e.g. acme) in the `okta subdomain` field of the first "Assign" card. This info is used to help parse out the `poll url` for verifying push notifications.
 
-4. #### Testing
+4. ### Testing
 The workflow should now be configured. To test, go to "1. Trigger Okta Factor Challenge" flow and select Test. Enter your Okta User ID in the input fields. 
 
 5. ### aditional configuration
