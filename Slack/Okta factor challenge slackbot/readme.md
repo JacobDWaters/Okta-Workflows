@@ -38,9 +38,9 @@ Navigate to the “Interactivity & Shortcuts” page from the left menu bar. Tog
 Open the "4. Slack Interactivity Endpoint" flow. On the API Endpoint event card, select Endpoint settings `</>`. Copy the `Invoke URL`. Save the flow. Paste the `Invoke URL` into the `Request URL` field in the Slack app, then Save Changes.
 
 Navigate to the “OAuth & Permissions” page from the left menu bar. Select the "Add an OAuth Scope" under "Bot Token Scopes” section. The bot will need the following permissions
-* - im:read
-* - im:write
-* - im:history
+* im:read
+* im:write
+* im:history
 
 This will allow the bot to start direct messages with users and read messages between the bot and the user. 
 
@@ -48,10 +48,10 @@ At the top of the page select "Install to Workspace" under the “OAuth Tokens f
 
 2. ### Custom API Connection for Slackbot
 In Okta Workflows Open the `Connections` tab, select "+ New Connection". Select API Connector type and enter the following information:
-* - Connection Nickname = Whatever your like (e.g. Okta Factior Challenge Slackbot)
-* - Auth Type = `Custom`
-* - Header Name = `Authorization`
-* - Header Value = `Bearer <Bot User OAuth Token>`
+* Connection Nickname = Whatever your like (e.g. Okta Factior Challenge Slackbot)
+* Auth Type = `Custom`
+* Header Name = `Authorization`
+* Header Value = `Bearer <Bot User OAuth Token>`
 
 Select Create to save.
 
@@ -59,8 +59,8 @@ In flows  #1, #5, and #6 make sure the custom `API Connector` cards are correctl
 
 3. ### Customizing the flows
 Make the following changes to customize the flows.
-* - `2. Filter Factor List`. This flow creates a list of approved factors that a user can choose to verify with. Remove `factors` you dont want available to users from the first "Construct List" card. Do the same for `providers` on the second "Construct List" card.
-* - `5. Start Okta Factor Verification`. For push notification verification to work, enter your okta subdomain (e.g. acme) in the `okta subdomain` field of the first "Assign" card. This info is used to help parse out the `poll url` for verifying push notifications.
+* `2. Filter Factor List`. This flow creates a list of approved factors that a user can choose to verify with. Remove `factors` you dont want available to users from the first "Construct List" card. Do the same for `providers` on the second "Construct List" card.
+* `5. Start Okta Factor Verification`. For push notification verification to work, enter your okta subdomain (e.g. acme) in the `okta subdomain` field of the first "Assign" card. This info is used to help parse out the `poll url` for verifying push notifications.
 
 4. ### Testing
 The workflow should now be configured. To test, go to "1. Trigger Okta Factor Challenge" flow and select Test. Enter your Okta User ID in the input fields. 
@@ -75,11 +75,11 @@ You will likekly want to update "6. Verify Okta Factor Challenge" to call other 
 1. Supported Factors
 
 The Slackbot ONLY supports the following factors:
-* - call
-* - email
-* - push
-* - sms
-* - token:software:totp
+* call
+* email
+* push
+* sms
+* token:software:totp
 
     Cannot read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question are a serious security risk. Answers may be stored in Slack logs and readable by admins or other systems.
 
