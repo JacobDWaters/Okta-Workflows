@@ -26,6 +26,7 @@ This slack bot would not be possible without the following contributions!
 3. Access to Slack with the ability to create and edit slack bots.
 4. A configured Slack Connection. To configure a connection, see [Slack Connector](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/slack/slack.htm)
 5. A API Connection for the slackbot itself. Please see the "Setup" section for how to configure the slackbot and connection.
+6. A configured "API Endpoint" event card for the slackbot to send interactivty events to. Please see the "Setup" section.
 
 ## Setup
 
@@ -34,22 +35,20 @@ TBD!
 ## Limitations & Known Issues
 1. Supported Factors
 
-    The slackbot ONLY supports the following factors:
-    * - call
-    * - email
-    * - push
-    * - sms
-    * - token:software:totp
-    * - token:hotp
+The slackbot ONLY supports the following factors:
+* - call
+* - email
+* - push
+* - sms
+* - token:software:totp
 
     Currently unable to find a way to read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question answers are not-temporary and this could pose a serious security risk. Answers may be stored in slack logs and readable by Slack Admins or other systems.
 
 2. Supported Providers
 
-    The slackbot ONLY support the following providers:
-    * - OKTA
-    * - GOOGLE
-    * - CUSTOM
+The slackbot ONLY support the following providers:
+* - OKTA
+* - GOOGLE
 
 Other providers generally rely on `token`, `web`, or `webauthn`. 
 
@@ -58,9 +57,9 @@ Other providers generally rely on `token`, `web`, or `webauthn`.
  
     It is strongly recommended you consider the needs of your org and work environment before implementing.
  
-    The slackbot may fail to verify a factor within the required time frame due to "times executions taking take longer than 60 seconds." Further, "Workflows doesn't guarantee execution latency. In most cases, flows run very fast. However, Workflows is a multi-tenant system and does not have a latency SLA." 
+    The slackbot may fail to verify a factor within the required time frame due to "times executions taking take longer than 60 seconds." Further, "Workflows doesn't guarantee execution latency. In most cases, flows run very fast. Further, "Workflows is a multi-tenant system and does not have a latency SLA." 
 
-     Synchronous flows such as customizing an auth decision or orchestrating user interaction are considered "Unsupported use cases".
+    Synchronous flows such as customizing an auth decision or orchestrating user interaction are considered "Unsupported use cases."
 
 4. Okta User and Slack User Association
 
@@ -68,6 +67,6 @@ Other providers generally rely on `token`, `web`, or `webauthn`.
 
 5. Security Risks 
 
-    Please carefully consider any other possible security risks before implementing! Certain info such as `okta user id`, `factor id` and factor answers needs to be passed to Slack in order for the workflow and bot to work. This may be info you are not comfortable exposing to slack. 
+    Please carefully consider any other possible security risks before implementing! Certain info such as `okta user id`, `factor id` and factor answers needs to be passed to Slack in order for the workflow and bot to work. This may be info you are not comfortable exposing to Slack. 
 
     `call`, `email`, `sms` are not secure means of doing user verification. Recommend reading [About Multifactor Authentication](https://help.okta.com/en-us/Content/Topics/Security/mfa/about-mfa.htm) to determine which factors you want to support.
