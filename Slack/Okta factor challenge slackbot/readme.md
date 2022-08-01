@@ -1,5 +1,7 @@
 # Okta Factor Challenge Slackbot
 
+WORK IN PROGRESS
+
 ## Overview
 Being able to verify a users identity is a frequent and critical part of the modern IT process. There are plenty of cases where one may want to validate a user is who they are, before providing sensitive information or making changes on behalf of a user. This slack bot and workflows provide a means by which to verify a user's identity directly within Slack itself. 
 
@@ -7,7 +9,7 @@ The workflow consists of a the following flows :
 
 ## Thank You
 This slack bot would not be possible without the following contributions!
-* Dmitri (@Dmitri in MacAdmins). This slackbot was heavily inspired by their [Filevault Recovery Retrieval](https://www.naviguidance.com/blog/filevault-recovery-retrieval) workflow! 
+* Dmitri (@Dmitri in MacAdmins). This slackbot was heavily inspired by their [Filevault Recovery Retrieval](https://www.naviguidance.com/blog/filevault-recovery-retrieval) workflow! They've been incacluably helpful in advancing my IT career as well!
 * Gabiral (@Gabriel in MacAdmins). For their guidance and input in working with Okta's API and factors in general. Also for pushing me to see if this is doable with not only `push` but other factors as well!
 
 
