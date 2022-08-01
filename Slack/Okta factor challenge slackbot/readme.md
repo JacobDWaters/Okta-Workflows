@@ -7,7 +7,7 @@ This slack and workflows are a proof of concept. Please read the `Limitations an
 
 Being able to verify a users identity is a frequent and critical part of the modern IT process. There are plenty of cases where one may want to validate a user's identity before providing sensitive information or making changes on their behalf. This slackbot and workflows provide a means by which to verify a user's identity with Okta directly within Slack itself. 
 
-The workflow consists of a the following flows:
+The workflow consists of the following flows:
 1. Trigger Okta Factor Challenge
 2. Filter Factor List
 3. Create Verification Options Slack Block
@@ -43,7 +43,7 @@ The slackbot ONLY supports the following factors:
 * - sms
 * - token:software:totp
 
-    Currently unable to find a way to read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question answers are not-temporary and this could pose a serious security risk. Answers may be stored in slack logs and readable by Slack Admins or other systems.
+    Currently unable to find a way to read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question answers are not temporary, presenting a serious security risk. Answers may be stored in slack logs and readable by Slack Admins or other systems.
 
 2. Supported Providers
 
