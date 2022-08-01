@@ -3,6 +3,8 @@
 WORK IN PROGRESS
 
 ## Overview
+This slack and workflows are a proof of concept. Please read the `Limitations and Known Issues` section THOROUGHLY before deciding to implement at your org or not!
+
 Being able to verify a users identity is a frequent and critical part of the modern IT process. There are plenty of cases where one may want to validate a user is who they are, before providing sensitive information or making changes on behalf of a user. This slack bot and workflows provide a means by which to verify a user's identity directly within Slack itself. 
 
 The workflow consists of a the following flows :
