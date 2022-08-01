@@ -1,9 +1,7 @@
 # Okta Factor Challenge Slackbot
 
-WORK IN PROGRESS
-
 ## Overview
-This Slackbot and workflows are a proof of concept.
+This workflow is a proof of concept.
 
 Being able to verify a users identity is a frequent and critical part of the modern IT process. There are plenty of cases where one may want to validate a user's identity before providing sensitive information or making changes on their behalf. This Slackbot and workflows provide a means by which to verify a user's identity with Okta directly within Slack itself. 
 
