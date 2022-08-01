@@ -28,12 +28,13 @@ This Slack bot would not be possible without the following contributions!
 6. A configured "API Endpoint" event card for the Slackbot to send interactivty events to. Please see the "Setup" section.
 
 ## Setup
+Import the flowpack before beginning setup.
 
 1. ### Slack Bot Setup
 
-Open up the Slack Apps page at https://api.Slack.com/apps and click “Create New App”. Give the app a name and select an appropriate workspace.
+Go to https://api.Slack.com/apps and click “Create New App”. Give the app a name and select an appropriate workspace.
 
-Navigate to the “Interactivity & Shortcuts” page from the left menu bar. Toggle "ON" Interactivity. We need to provide Slack with the appropriate `Request URL` for Slack to send user interactions. To do so, we will fetch the `Invoke URL` from "4. Slack Interactivty Endpoint" flow.
+Navigate to the “Interactivity & Shortcuts” page. Toggle "ON" Interactivity. We need to provide Slack with the appropriate `Request URL` for Slack to send user interaction data. To do so, we will fetch the `Invoke URL` from  the "4. Slack Interactivty Endpoint" flow.
 
 Open the "4. Slack Interactivity Endpoint" flow. On the API Endpoint event card, select Endpoint settings `</>`. Copy the `Invoke URL`. Save the flow. Paste the `Invoke URL` into the `Request URL` field in the Slack app, then Save Changes.
 
@@ -75,19 +76,19 @@ You will likekly want to update "6. Verify Okta Factor Challenge" to call other 
 1. Supported Factors
 
 The Slackbot ONLY supports the following factors:
-* call
-* email
-* push
-* sms
-* token:software:totp
+* `call`
+* `email`
+* `push`
+* `sms`
+* `token:software:totp`
 
     Cannot read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question are a serious security risk. Answers may be stored in Slack logs and readable by admins or other systems.
 
 2. Supported Providers
 
 The Slackbot ONLY support the following providers:
-* - OKTA
-* - GOOGLE
+* `OKTA`
+* `GOOGLE`
 
 Other providers generally rely on `token`, `web`, or `webauthn`. 
 
