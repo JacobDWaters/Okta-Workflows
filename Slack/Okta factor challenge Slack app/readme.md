@@ -69,7 +69,7 @@ The workflow should now be configured. To test, go to "1. Trigger Okta Factor Ch
 5. ### aditional configuration
 To trigger the workflow, add a "Call Async Flow" card to another workflow and point it to flow #1. make sure to pass the appropriate Okta User IDs to flow #1.
 
-You will likekly want to update "6. Verify Okta Factor Challenge" to call other flows or include additional information depending on the returned `factorResult`. Update the branch of an `if/elseif` card to do so.
+You will likekly want to update "6. Verify Okta Factor Challenge" to call other flows or include additional information depending on the returned `factorResult`. Update the branch of the `if/elseif` card handling `factorResults` to do so.
 
 
 ## Limitations & Known Issues
