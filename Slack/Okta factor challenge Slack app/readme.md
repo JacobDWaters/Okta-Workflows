@@ -33,9 +33,9 @@ Navigate to the “Interactivity & Shortcuts” page. Toggle "ON" Interactivity.
 Open the "4. Slack Interactivity Endpoint" flow. On the API Endpoint event card, select Endpoint settings `</>`. Copy the `Invoke URL`. Save the flow. Paste the `Invoke URL` into the `Request URL` field in the Slack app, then Save Changes.
 
 Navigate to the “OAuth & Permissions” page from the left menu bar. Select the "Add an OAuth Scope" under "Bot Token Scopes” section. The bot will need the following permissions
-* im:read
-* im:write
-* im:history
+* `im:read`
+* `im:write`
+* `im:history`
 
 This will allow the bot to start direct messages with users and read messages between the bot and the user. 
 
