@@ -1,9 +1,9 @@
-# Okta Factor Challenge Slackbot
+# Okta Factor Challenge Slack App 
 
 ## Overview
 This workflow is a proof of concept.
 
-Being able to verify a users identity is a frequent and critical part of the modern IT process. There are plenty of cases where one may want to validate a user's identity before providing sensitive information or making changes on their behalf. This Slackbot and workflows provide a means by which to verify a user's identity with Okta directly within Slack itself. 
+Being able to verify a users identity is a frequent and critical part of the modern IT process. There are plenty of cases where one may want to validate a user's identity before providing sensitive information or making changes on their behalf. This Slack app and workflows provide a means by which to verify a user's identity with Okta directly within Slack itself. 
 
 The workflow consists of the following flows:
 1. Trigger Okta Factor Challenge
@@ -15,7 +15,7 @@ The workflow consists of the following flows:
 
 ## Thank You
 This Slack bot would not be possible without the following contributions!
-* Dmitri (@Dmitri in MacAdmins). This Slackbot was heavily inspired by their [Filevault Recovery Retrieval](https://www.naviguidance.com/blog/filevault-recovery-retrieval) workflow. They've been incacluably helpful!
+* Dmitri (@Dmitri in MacAdmins). This Slack app was heavily inspired by their [Filevault Recovery Retrieval](https://www.naviguidance.com/blog/filevault-recovery-retrieval) workflow. They've been incacluably helpful!
 * Gabiral (@Gabriel in MacAdmins). For their guidance and input in working with Okta's API and factors in general. Also for pushing me to see if this is doable with not only `push` but other factors.
 
 
@@ -24,8 +24,8 @@ This Slack bot would not be possible without the following contributions!
 2. A configured Okta Connection. To configure a connection, see [Authentication](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/okta/overviews/authorization.htm).
 3. Access to Slack with the ability to create and edit Slack bots.
 4. A configured Slack Connection. To configure a connection, see [Slack Connector](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/Slack/Slack.htm)
-5. A API Connection for the Slackbot itself. Please see the "Setup" section for how to configure the Slackbot and connection.
-6. A configured "API Endpoint" event card for the Slackbot to send interactivty events to. Please see the "Setup" section.
+5. A API Connection for the Slack app itself. Please see the "Setup" section for how to configure the Slack app and connection.
+6. A configured "API Endpoint" event card for the Slack app to send interactivty events to. Please see the "Setup" section.
 
 ## Setup
 Import the flowpack before beginning setup.
@@ -47,9 +47,9 @@ This will allow the bot to start direct messages with users and read messages be
 
 At the top of the page select "Install to Workspace" under the “OAuth Tokens for Your Workspace” section. Once authorized and installed, a `Bot User OAuth Token` will be available. Copy and save it, the token will be needed for the next step.
 
-2. ### Custom API Connection for Slackbot
+2. ### Custom API Connection for Slack app
 In Okta Workflows Open the `Connections` tab, select "+ New Connection". Select API Connector type and enter the following information:
-* Connection Nickname = Whatever your like (e.g. Okta Factior Challenge Slackbot)
+* Connection Nickname = Whatever your like (e.g. Okta Factior Challenge Slack app)
 * Auth Type = `Custom`
 * Header Name = `Authorization`
 * Header Value = `Bearer <Bot User OAuth Token>`
@@ -75,7 +75,7 @@ You will likekly want to update "6. Verify Okta Factor Challenge" to call other 
 ## Limitations & Known Issues
 1. Supported Factors
 
-The Slackbot ONLY supports the following factors:
+The Slack app ONLY supports the following factors:
 * `call`
 * `email`
 * `push`
@@ -86,7 +86,7 @@ The Slackbot ONLY supports the following factors:
 
 2. Supported Providers
 
-The Slackbot ONLY support the following providers:
+The Slack app ONLY support the following providers:
 * `OKTA`
 * `GOOGLE`
 
@@ -97,7 +97,7 @@ Other providers generally rely on `token`, `web`, or `webauthn`.
  
     It is strongly recommended you consider the needs of your org and work environment before implementing.
  
-    The Slackbot may fail to verify a factor within the required time frame due to "times executions taking take longer than 60 seconds." Further, "Workflows doesn't guarantee execution latency. In most cases, flows run very fast, but Workflows is a "multi-tenant system and does not have a latency SLA." 
+    The Slack app may fail to verify a factor within the required time frame due to "times executions taking take longer than 60 seconds." Further, "Workflows doesn't guarantee execution latency. In most cases, flows run very fast, but Workflows is a "multi-tenant system and does not have a latency SLA." 
 
     Synchronous flows such as customizing an auth decision or orchestrating user interaction are considered "Unsupported use cases."
 
