@@ -13,12 +13,6 @@ The workflow consists of the following flows:
 5. Start Okta Factor Verification 
 6. Verify Okta Factor Challenge
 
-## Thank You
-This Slack bot would not be possible without the following contributions!
-* Dmitri (@Dmitri in MacAdmins). This Slack app was heavily inspired by their [Filevault Recovery Retrieval](https://www.naviguidance.com/blog/filevault-recovery-retrieval) workflow. They've been incacluably helpful!
-* Gabiral (@Gabriel in MacAdmins). For their guidance and input in working with Okta's API and factors in general. Also for pushing me to see if this is doable with not only `push` but other factors.
-
-
 ## Prerequisites
 1. Access to an Okta tenant with Okta Workflows enabled
 2. A configured Okta Connection. To configure a connection, see [Authentication](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/okta/overviews/authorization.htm).
