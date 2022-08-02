@@ -76,7 +76,7 @@ The Slack app ONLY supports the following factors:
 * `sms`
 * `token:software:totp`
 
-    Cannot read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question are a serious security risk. Answers may be stored in Slack logs and readable by admins or other systems.
+    Cannot read inputs from `token:hardware`, `utf`, `web`, and `webauthn`. `question` is not supported as security question answers are not temporary and may be stored in Slack logs and readable by admins or other systems.
 
 2. Supported Providers
 
