@@ -1,6 +1,9 @@
 # Google
 While Okta provides some pre-built connectors for working Google Product (Gmail, Google Calendar, GOogle Workspace, etc) these connectors sometimes are lacking the necessary scopes for some features and workflows. Instead, Connector Builder can be used to create a custom connection with the desired Google app and scopes.
 
+Connector Builder supports custom OAuth connections. However, certain parameters (specifically `"access_type": "offline"`) are required for correctly authenticating a Workflows connection wtih Google via OAuth. Connector builder currently does not support adding parameters to the initial Authorization Call. Instead, we can Google's Developer OAuth 2.0 Playground and a Custom auth type connection to achieve this.
+
+
 Note - Connector Builder is currently in Beta. 
 
 ### Resources
@@ -9,7 +12,6 @@ Note - Connector Builder is currently in Beta.
 * [Okta Workflows Connector Builder](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-builder/connector-builder.htm)
 
 # Setup
-Connector Builder supports creating custom OAuth connections, however, due to the inability for connector builder to currently include required (`"access_type": "offline"`) parameters in the authentication call, a different approach must be taken. Instead we can Google's Developer OAuth 2.0 Playground and a Custom auth type connection.
 
 ## Google Cloud Project and Oauth App
 
