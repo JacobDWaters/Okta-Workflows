@@ -70,6 +70,7 @@ Connector Builder supports creating custom OAuth connections, however, due to th
         * Grant Type, `grant_type`, text
         * Refresh Token, `refresh_token`, password
 * Save the Authentication
+![Connector - Authentication](/Connectors/Google/Connector%20-%20Authentication.png)
 
 7. ### Test the Connection
 * Go to the conenector's "Test Connections" section, select "+ New Connection"
@@ -79,10 +80,13 @@ Connector Builder supports creating custom OAuth connections, however, due to th
     * Client Secret = `<YourClientSecret>`
     * Grant Type = `refresh_token`
     * Refresh Token = `<YourRefreshToken>`
-Select "Create" to create and save the new test connection.
+* Select "Create" to create and save the new test connection.
+![Connector - Test Connection](/Connectors/Google/Connector%20-%20Test%20Connection.png)
 
 8. ### Configure the httpHelper Flow
 * Configure the httpHelper flow as follows. The flow will use the refresh token to grab an access token each time it runs. The flow can then make the necessary API calls. If you have never built a httpHelper flow before, read Okta's [Build a httpHelper flow](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-builder/capia-httphelper.htm) for instructions.
+
+![Connector - httpHelper](/Connectors/Google/Connector%20-%20httpHelper.png)
 
 9. ### Create Additional Flows
 * Create additional flows (_authping, Custom API Action, etc) for the connector. There are a myriad of options here, so build whatever flows are going to be most useful for you!
