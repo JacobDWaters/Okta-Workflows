@@ -15,10 +15,10 @@ Note - Connector Builder is currently in Beta.
 
 ## Google Cloud Project and Oauth App
 
-1. ## Create the Google Cloud Project
+1. ### Create the Google Cloud Project
 * Go to [cloud.google.com](https://console.cloud.google.com/) and create a new project 
 
-2. #### Enable the APIs
+2. ### Enable the APIs
 * In the left menu, select "APIs and services" > "Enabled Apis and services". 
 * Select "+ Enable APIs and Services" at the top.
 * Search for the APIs you want to enable (e.g. Google Drive). You will need to add each API you want the connector to work with.
