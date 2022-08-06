@@ -12,4 +12,6 @@ Flows are grouped by their primary purpose or app.
 - [Okta factor challenge Slack app](/Slack/Okta%20factor%20challenge%20Slack%20app/)
 - [Create groups and group rules from Okta profile changes](/Okta/Create%20group%20and%20group%20rules%20from%20profile%20changes)
 
-## Guides
+## Connectors
+ - [Google](/Connectors/Google/)
+ - [Snipe-IT](/Connectors/Snipe-IT/)
