@@ -5,7 +5,7 @@ This workflow can be used to generate return shipping labels with ShipEngine. Th
 
 
 The workflow consists of a single helper flow:
-- **GenerateShippingLabelswithShipEngine**.
+- **Generate Return Shipping Labels with Ship Engine**.
 
 ## Prerequisites
 1. Access to an Okta tenant with Okta Workflows enabled
