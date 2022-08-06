@@ -8,13 +8,13 @@ The workflow consists of a single helper flow:
 - **Generate Return Shipping Labels with Ship Engine**.
 
 ## Prerequisites
-1. Access to an Okta tenant with Okta Workflows enabled
+1. Access to an Okta tenant with Okta Workflows enabled.
 2. A configured Okta Connection. To configure a connection, see [Authentication](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/okta/overviews/authorization.htm).
 3. A [ShipEngine](https://www.shipengine.com/) account.
 4. A [ShipEngine Carrier](https://www.shipengine.com/docs/carriers/setup/).
 5. Optional - A [ShipEngine Theme](https://app.shipengine.com/#/portal/themes). 
 6. A custom API connection for the ShipEngine account. 
-7. A configured email provider connection (i.e. Gmail). See [Connectors](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/connector-reference.htm)
+7. A configured email provider connection (i.e. Gmail). See [Connectors](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/connector-reference.htm).
 
 ## Setup
 1. ### Create ShipEngine API Connection**
