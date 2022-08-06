@@ -1,7 +1,7 @@
 # Create groups and group rules from Okta profile changes
 
 ## Overview
-Thie workflow can be useful for dynamically creating groups and group rules as new teams, departments, organizations (or anyone other profile attribute) are added to your Okta tenant. For example, your org creates a new Customer Enablement team? Automatically create a group and group rule and assign all members of the Customer Enablement team to the group.
+ThiS workflow can be useful for dynamically creating groups and group rules as new teams, departments, organizations (or anyone other profile attribute) are added to your Okta tenant. For example, your org creates a new Customer Enablement team? Automatically create a group and group rule and assign all members of the Customer Enablement team to the group.
 
 To do this, the workflow monitors for changes to a specified profile attribute (e.g. department) in the Okta user profile. If the value of profile attribute changes (e.g. from IT to Engineering) the flow looks to see if a group already exists, if not the flow creates a corresponding active group and group rule.
 
