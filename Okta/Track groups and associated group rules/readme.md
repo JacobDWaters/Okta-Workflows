@@ -1,7 +1,9 @@
 # Track Groups and Associated Group Rules
 
 ## Overview
-This workflow can be used to generate return shipping labels with ShipEngine. This can be helpful in automating the offboarding process for remote users and having them return equipment back. The flow can be readily adapted to support shipping to users as well.
+Okta group rules already include a way to view all groups a user is added to when rule conditions are met. However, without checking each group rule individually there is no easy way to view which group rules are assigned to a specific group. This workflow generates a table containing all groups and their associated group rules. This can be helpful for determine which group rules are controlling membership to a given group. 
+
+Tip - In the table, group rules are a return as an array. This can be hard to view due to the UI. Click the expand arrow next to a group rule cell to better view all associated group rules. 
 
 ## Getting Started
 
@@ -21,21 +23,13 @@ Tables:
 
 ### Setup
 * If you have not already done so, import the flopack.
-* Open the flow.
-* If you would like to do tracking pages as part of the flow, create a ShipEngine Theme and enter the `Tracking Theme Guid` in the `Branded Tracking Theme GUID` card. If no value is entered, the flow will skip this step.
-* Make sure the API Connector cards are associated the ShipEngine API connection created earlier.
-* Make sure the Okta and Gmail actions cards are associated with the correct connections.
-* `Ship To` card, enter your return shipping information. This could be a company address, warehouse, etc.
-* `Package Weight` card, enter the aproximate weight of the package.
-* `Package Dimensions` card, enter the aproximate dimensions of the package.
-* `Shipment` card, enter the ShipEngine `service_code` for the courrier (USPS, Fedex, UPS, etc) you will be using. Enter `label_layout` (letter, 4x6, etc) for the generated shipping label.
-* `Email Subject` card, compose your email subject line.
-* `Email Body` card, compose your email body. Drag and drop fields as needed.
+* Open each flow and make sure the Okta actions cards are associated with the correct connection.
+* Enable the flows.
 
-3. ### Enable the Flow
-Enable the flows!
+The workflow is triggered by a "Schedule" event card in the `1. Stream Group Record` flow. You can update the schedule event card to run at your preferred cadence or replace the card entirely with any other event card.
 
 ## Limitations & Known Issues
-* The group rules
+* The "Search Group Rules" card in `2. Update Groups and Groups Rules Table` flow returns the `First 200 Matching Records`. If your tenant has more than 200 group rules, the flow may fail to include all associated rules. 
+
 ## Resources
 * [About Group Rules](https://help.okta.com/en-us/Content/Topics/users-groups-profiles/usgp-about-group-rules.htm)
