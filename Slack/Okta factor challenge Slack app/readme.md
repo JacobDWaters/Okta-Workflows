@@ -36,6 +36,7 @@ Navigate to the “OAuth & Permissions” page from the left menu bar. Select th
 * `im:read`
 * `im:write`
 * `im:history`
+* `chat:write`
 
 This will allow the bot to start direct messages with users and read messages between the bot and the user. 
 
