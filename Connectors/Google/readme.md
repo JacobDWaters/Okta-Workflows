@@ -1,7 +1,7 @@
 # Google
 While Okta provides some pre-built connectors for working Google apps (Gmail, Google Calendar, Google Workspace, etc) these connectors sometimes lack the necessary scopes and actions to build more complex workflows. Instead, Connector Builder can be used to create a custom connection with the desired scopes and actions.
 
-Connector Builder supports custom OAuth connections. However, certain parameters (specifically `"access_type": "offline"`) are required for correctly authenticating a Workflows connection wtih Google via OAuth. Connector builder currently does not support adding parameters to the initial Authorization Call. Luckily, we can Google's Developer OAuth 2.0 Playground and a Custom auth type connection to achieve this.
+Connector Builder supports custom OAuth connections. However, certain parameters (specifically `"access_type": "offline"`) are required for correctly authenticating a Workflows connection wtih Google via OAuth. Connector builder currently does not support adding parameters to the initial Authorization Call. Luckily, we can use Google's Developer OAuth 2.0 Playground and a Custom auth type connection to achieve this.
 
 
 Note - Connector Builder is currently in Beta. 
@@ -25,8 +25,8 @@ Note - Connector Builder is currently in Beta.
 * On each API's page, "Enable" the API. The API is now enabled ready to be used.
 
 3. ### Create the OAuth Client Credentials
-* In the left menu, naviate to "Credentials", select "+ Create Credentials" > "OAuth client ID"
-* Since this is the first time create a OAuth client ID, we will need to configure a consent screen first, select "Configure Consent Screen"
+* In the left menu, navigate to "Credentials", select "+ Create Credentials" > "OAuth client ID"
+* Since this is the first time we're creating an OAuth client ID, we will need to configure a consent screen first, select "Configure Consent Screen"
 * Select `Internal` for user type.
 * Fill out the required fields for App Name, User support email, etc.
 * In the scopes section, add the scopes you want your connector to have. Remember which scopes you added! For example, add `https://www.googleapis.com/auth/drive` for Google Drive.  If you are unsure about which scopes you need, read the apps associated API Reference documentation for guidance. 
@@ -39,8 +39,8 @@ Note - Connector Builder is currently in Beta.
 
 4. ### Get the Refresh Token
 * Go to [Google's OAuth 2.0 Playgound](https://developers.google.com/oauthplayground/)
-* Select the "Cog" in the upp right to configure the OAuth 2.0 connection.
-* Make sure the following is set
+* Select the "Cog" in the upper-right to configure the OAuth 2.0 connection.
+* Make sure the following is set:
     * OAuth Flow = `Server-side`
     * OAuth endpoints = `Google`
     * Authorization endpoint = `https://accounts.google.com/o/oauth2/v2/auth`
