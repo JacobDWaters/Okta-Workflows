@@ -91,7 +91,15 @@ Note - Connector Builder is currently in Beta.
 ![Connector - httpHelper](/Connectors/Google/Connector%20-%20httpHelper.png)
 
 9. ### Create Additional Flows
-* Create additional flows (_authping, Custom API Action, etc) for the connector. There are a myriad of options here, so build whatever flows are going to be most useful for you!
+* Create additional flows for the connector. There are a myriad of options here, so build whatever flows are going to be most useful for you!
+
+#### Custom API Action and _authping cards
+flows for doing a `Custom API Action` card as well as handling `_authping`(authentication validation) have been included. These flows must be downloaded and individually uploaded to the connector.
+
+the  connector is Google API agnostic, so you will need to determine which endpoint and HTTP request you want to for the `_authping` flow first. Update and save before implementing. I strongly recommend you use a simple GET Http request for authentication verification. HTTP requests like `GET https://www.googleapis.com/drive/v3/files` may take a long time to process or fail outright.
+
+
+Note: neither card has been fully tested currently and may fail. If that happens, file a pull request or send a message and I will fix. 
 
 10. ### Deploying the Connector
 * Once you have created the additional flows and are done testing, go to "Deployment" to deploy the connector.
