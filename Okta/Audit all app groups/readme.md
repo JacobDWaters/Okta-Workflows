@@ -11,7 +11,7 @@ Flows
 - "1. Schedule run list applications"
 - "2. Paginate"
 - "3. Get groups for app"
-- "4. Get info for groups
+- "4. Get info for groups"
 
 Tables
 - Application Groups
