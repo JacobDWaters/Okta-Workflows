@@ -8,10 +8,10 @@ This flow is a redsign of @pro4tlzz's wonderful [App Group Report Workflow](http
 The workflow consists of the following flow(s) and table(s):
 
 Flows
-- "1. Schedule run list applications"
-- "2. Paginate"
-- "3. Get groups for app"
-- "4. Get info for groups
+1. Schedule run list applications
+2. Paginate
+3. Get groups for app
+4. Get info for groups
 
 Tables
 - Application Groups

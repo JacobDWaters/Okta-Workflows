@@ -7,9 +7,9 @@ This workflow can be used to build a table containing every Okta user's last acc
 The workflow consists of the following flow(s) and table(s):
 
 Flows
-- "1. List Active Okta Users"
-- "2. List user's assigned applications"
-- "3. Retrieve user's last app access date"
+1. List Active Okta Users
+2. List user's assigned applications
+3. Retrieve user's last app access date
 
 Tables
 - Access Review Report
