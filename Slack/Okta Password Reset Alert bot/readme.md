@@ -2,7 +2,7 @@
 
 ## Overview
 ![Example](/Slack/Okta%20Password%20Reset%20Alert%20bot/Example.png)
-To help prevent a user's Okta account from being compromised, this bot sends a slack message anytime their password has been reset. The user can then choose to protect their account by suspending it and clearing all sessions.
+This Slack bot sends an alert to a user anytime their Okta account password has been reset. Based on the information provided, the user can decided to protect their account by triggering account suspension and clearing of all active user sessions.
 
 the bot message includes the following activity details to help a user determine if a password reset was malicious or not.
 * Browser
