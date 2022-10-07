@@ -45,7 +45,7 @@ Note - Connector Builder is currently in Beta.
     * OAuth endpoints = `Google`
     * Authorization endpoint = `https://accounts.google.com/o/oauth2/v2/auth`
     * Token endpoint = `https://oauth2.googleapis.com/token`
-    * Access token location = `Authorization Hheader w/ Bearer prefix`
+    * Access token location = `Authorization Header w/ Bearer prefix`
     * Access Type = `Offline`
     * Force prompt = `Consent Screen`
     * User your own OAuth Credentials = `CHECKED`
