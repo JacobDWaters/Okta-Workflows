@@ -1,10 +1,9 @@
 # Okta Password Reset Alert Bot
 
 ## Overview
+This bot sends a Slack message anytime a user's Okta account password has been reset. In-case of compromise, The user can choose to protect their account by suspending and clearing all active sessions.
 
-To help prevent a user's Okta account from being compromised, this bot sends a slack message anytime their password has been reset. The user can then choose to protect their account by suspending it and clearing all sessions.
-
-the bot message includes the following activity details to help a user determine if a password reset was malicious or not.
+The bot message includes the following activity details to help a user determine if a password reset was malicious or not.
 * Browser
 * OS
 * Date & Time
@@ -19,7 +18,7 @@ Flows:
 3. Suspend Okta User and Clear Sessions
 
 
-WARNING - When testing the workflow, make sure you do not testing on active user accounts. Accounts could be erroneously suspended on deactivated!
+WARNING - When testing the workflow, make sure you do not test on active user accounts. Accounts could be erroneously suspended!
 
 ## Prerequisites
 1. Access to an Okta tenant with Okta Workflows enabled
@@ -61,7 +60,7 @@ Select Create to save.
 
 In flows  #1 and #2 make sure the custom `API Connector` cards are correctly associated with the newly created API connector. 
 
-3. ### configuration
+3. ### Additional Configuration
 No additional configuration is required. 
 
 ## Limitations & Known Issues
