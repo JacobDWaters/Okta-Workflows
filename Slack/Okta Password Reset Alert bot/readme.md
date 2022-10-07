@@ -59,15 +59,11 @@ In Okta Workflows Open the `Connections` tab, select "+ New Connection". Select 
 
 Select Create to save.
 
-In flows  #1 and #2 make sure the custom `API Connector` cards are correctly associated with the newly created API connector. 
+In flows  #1 and #2 make sure the custom `API Connector` cards are correctly associated with the newly created API connector.
 
-<<<<<<< HEAD
-3. ### configuration
-No additional configuration required. 
-=======
 3. ### Additional Configuration
 No additional configuration is required. 
->>>>>>> a83e81506badeb5f5428c6723c5e756fd08f3a43
+
 
 ## Limitations & Known Issues
 
