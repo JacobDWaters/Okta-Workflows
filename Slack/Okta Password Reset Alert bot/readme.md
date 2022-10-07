@@ -19,7 +19,7 @@ Flows:
 3. Suspend Okta User and Clear Sessions
 
 
-WARNING - When testing the workflow, make sure you do not testing on active user accounts. Accounts could be erroneously suspended on deactivated!
+WARNING - When testing the workflow, make sure you do not test on active user accounts. Accounts could be erroneously suspended!
 
 ## Prerequisites
 1. Access to an Okta tenant with Okta Workflows enabled
@@ -61,8 +61,13 @@ Select Create to save.
 
 In flows  #1 and #2 make sure the custom `API Connector` cards are correctly associated with the newly created API connector. 
 
+<<<<<<< HEAD
 3. ### configuration
 No additional configuration required. 
+=======
+3. ### Additional Configuration
+No additional configuration is required. 
+>>>>>>> a83e81506badeb5f5428c6723c5e756fd08f3a43
 
 ## Limitations & Known Issues
 
