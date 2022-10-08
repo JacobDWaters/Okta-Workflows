@@ -1,10 +1,12 @@
-# Okta Password Reset Alert Bot
+# Okta User Sign In Attempt Slack Notification Bot
 
 ## Overview
 ![Example](/Slack/Okta%20Password%20Reset%20Alert%20bot/Example.png)
-This Slack bot sends an alert to a user anytime their Okta account password has been reset. Based on the information provided, the user can decided to protect their account by triggering account suspension and clearing of all active user sessions.
+This Slack bot notifies an Oktaa user whenever a positive behavior has been returned during a sign-in attempt. Based on the information provided in the notification, the user can decide to secure their account by triggering an account suspension and clearing all active sessions.
 
-the bot message includes the following activity details to help a user determine if a password reset was malicious or not.
+See Okta documentation to learn more about [Behaviors](https://help.okta.com/oie/en-us/Content/Topics/Security/proc-security-behavior-detection.htm)
+
+The bot message includes the following activity details to help a user determine if a password reset was malicious or not.
 * Browser
 * OS
 * Date & Time
@@ -14,9 +16,10 @@ the bot message includes the following activity details to help a user determine
 The workflow consists of the following flows and tables:
 
 Flows:
-1. User Okta Password Reset Updated
-2. Slack Interactivity Endpoint
-3. Suspend Okta User and Clear Sessions
+1. Okta user sign in attempt
+2. User sign-on Slack notification
+3. Slack interactivity endpoint
+4. Suspend Okta user and clear sessions
 
 
 WARNING - When testing the workflow, make sure you do not test on active user accounts. Accounts could be erroneously suspended!
