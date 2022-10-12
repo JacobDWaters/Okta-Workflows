@@ -6,21 +6,21 @@ With behavior detection and evaluation, Okta captures patterns of user behavior 
 
 [Okta Documentation - Behaviors](https://help.okta.com/oie/en-us/Content/Topics/Security/proc-security-behavior-detection.htm)
 
-Details about behavior data for any applicable sign-in attempt are recorded in System Log events. To see behavior details for user.`session.start` and `policy.evaluate.sign_on `events, navigate to `DebugContext` and `DebugData` in the System log. This information is also returned as part of some event hooks, such as `User sign in attempt` as well as corresponding Okta event cards in Okta Workflows
+Details about behavior data for any applicable sign-in attempt are recorded in System Log events. To see behavior details for user.`session.start` and `policy.evaluate.sign_on `events, navigate to `DebugContext` and `DebugData` in the System log. This information is also returned as part of some event hooks, such as `User sign in attempt` as well as corresponding Okta event cards in Okta Workflows.
+
+Behaviors can be useful in building custom notifications or securing accounts when potentialy malicious actions occur. 
 
 ## The Issue
 
-Unfortunately, `behaviors` within the `DebugData` object are provided as a string, with each behavior and corresponding result returned in a non-standard json format. 
+Detection Logic in System Log events, which include behaviors, found within `logOnlySecurityData` are captured in a json format `{"Key":"Value"}`. Detections that evaluate behaviors `(debugContext.debugData.behaviors)` take the form of `Key=Value`. Unfortunately, behaviors returned as `Key=Value` are difficult to work within in workflows as frequently used cards such as `Get`, `Pluck`, `Filter` will not work be able parse them. 
 
-Example formatting of the behaviors key:value pair
-```{
-    "behaviors": "{New Geo-Location=NEGATIVE, New Device=POSITIVE, New IP=NEGATIVE, New State=NEGATIVE, New Country=NEGATIVE, Velocity=NEGATIVE, New City=NEGATIVE}"
+Example behaviors formatted in `Key=Value`
+```{"behaviors": "{New Geo-Location=NEGATIVE, New Device=POSITIVE, New IP=NEGATIVE, New State=NEGATIVE, New Country=NEGATIVE, Velocity=NEGATIVE, New City=NEGATIVE}"}
 ```
 
-This can make using `behaviors` in a workflow difficult as frequently used cards such as `Get`, `Pluck`, `Filter` will not work correctly.
-
 ## Solution
-The provided `behaviors.flow` includes an example of how to convert the originally provided `behaviors` into a standard json object. The object and fields can then be used as you see fit elsewhere in your flows. 
+
+The provided `behaviors.flow` includes logic for determing which format behaviors are returned in (based on whether `logOnlySecurityData is present`) and then converts `Key=Value` format to `{"Key":"Value"}`. Behaviors can then be used as you see fit elsewhere in your flows. 
 
 
 
