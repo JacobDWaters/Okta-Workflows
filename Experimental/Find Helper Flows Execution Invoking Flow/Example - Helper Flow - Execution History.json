@@ -1,0 +1,166 @@
+{
+    "executions": [
+        {
+            "bucketId": "",
+            "created": "2023-10-07T23:05:16.733Z",
+            "day": "2023-10-07",
+            "execution": "e393e172-28e2-4b28-90d2-4727a90b5d02",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 124,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T23:05:16.609Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "d983ff5a-b2c7-4558-8531-47c085a422fb",
+            "updated": "2023-10-07T23:05:16.733Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        },
+        {
+            "bucketId": "",
+            "created": "2023-10-07T22:53:27.780Z",
+            "day": "2023-10-07",
+            "execution": "14d2cab3-c556-48f4-9bab-a9daa91dce6b",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 96,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T22:53:27.684Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "63712232-b0d0-4335-a68f-4def7c12137d",
+            "updated": "2023-10-07T22:53:27.780Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        },
+        {
+            "bucketId": "",
+            "created": "2023-10-07T22:51:46.701Z",
+            "day": "2023-10-07",
+            "execution": "775e1423-a455-40c0-9460-c2330ab657df",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 98,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T22:51:46.603Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "3cf2d2b0-4fb6-491f-b9e9-9fbcbbef9184",
+            "updated": "2023-10-07T22:51:46.701Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        },
+        {
+            "bucketId": "",
+            "created": "2023-10-07T22:49:52.954Z",
+            "day": "2023-10-07",
+            "execution": "3b2df46f-a383-44c6-a8fa-a9a81e8ef627",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 98,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T22:49:52.856Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "ec9be32b-6fb0-4b92-8b5b-37be2c94739a",
+            "updated": "2023-10-07T22:49:52.954Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        },
+        {
+            "bucketId": "",
+            "created": "2023-10-07T22:46:42.398Z",
+            "day": "2023-10-07",
+            "execution": "e430d749-b507-401b-845d-68ce412b4414",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 88,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T22:46:42.310Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "606c8ca2-1845-479e-8b28-1d5875c740bb",
+            "updated": "2023-10-07T22:46:42.398Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        },
+        {
+            "bucketId": "",
+            "created": "2023-10-07T22:44:31.846Z",
+            "day": "2023-10-07",
+            "execution": "f2723cb8-41bd-44b2-bf40-674b43065ae2",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 105,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T22:44:31.741Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "a113ff7b-5346-4faf-9c1f-efa59249f315",
+            "updated": "2023-10-07T22:44:31.846Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        },
+        {
+            "bucketId": "",
+            "created": "2023-10-07T22:44:03.341Z",
+            "day": "2023-10-07",
+            "execution": "e423d37a-020c-467c-941f-df001554c504",
+            "indexName": "event.finished",
+            "indexValue": {
+                "tags": {
+                    "event.duration": 95,
+                    "event.success": "true",
+                    "event.error": "false",
+                    "error.message": null,
+                    "event.started": "2023-10-07T22:44:03.246Z",
+                    "flo.engineMode": "regular",
+                    "flo.throttled": false,
+                    "event.yielded": "false"
+                }
+            },
+            "traceId": "22958fc0-4dff-41c0-89f8-ccfd7a8bb612",
+            "updated": "2023-10-07T22:44:03.341Z",
+            "userId": "11383",
+            "vector": "12e5d386"
+        }
+    ],
+    "lastDate": "2023-10-07T22:44:03.341Z"
+}
