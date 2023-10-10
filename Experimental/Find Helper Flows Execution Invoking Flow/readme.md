@@ -52,8 +52,9 @@ Create the API Connection
 19. Wait for the flow to finish running.
 20. Open Execution History and select the Status dropdown (next to the search) and select Success.
 21. If all worked correctly, the only successful flow wil be the one which includes the correct `floId` for the parent flow that invoked the helper flow.
-22. Replace the values in this url https://[subdomain].workflows.okta.com/app/folders/my/flows/[floId] and paste it into the browser, then hit enter.
+22. Replace the values in this url https://`subdomain``.workflows.okta.com/app/folders/my/flows/`floId`` and paste it into the browser, then hit enter.
     If the flow does not immediately load, you can click on Execution History or Chart to get the flow to load correctly.
+    You can also use this url format to navigate to any flow without having to know its folder too. All you need is the floId.
 23. You can now view the flow that invoked the helper flow.
 
 ## Limitations and Issues
